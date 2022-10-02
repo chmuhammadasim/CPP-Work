@@ -8,7 +8,6 @@ void dbmsintro(){
     cout << "|=====================================================|";
     cout << "\n|                      Welcome To                     |";
     cout << "\n|               Array Management System               |";
-    cout << "\n|           By Muhammad Asim Chattha (210970)         |\n";
     cout << "|=====================================================|\n\n";
     system("pause");
     system("cls");
