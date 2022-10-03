@@ -8,6 +8,7 @@ void dbmsintro(){
     cout << "|=====================================================|";
     cout << "\n|                      Welcome To                     |";
     cout << "\n|               Array Management System               |";
+    cout << "\n|           By Muhammad Asim Chattha (210970)         |\n";
     cout << "|=====================================================|\n\n";
     system("pause");
     system("cls");
@@ -21,8 +22,9 @@ void dbmsmenu(){
     cout << "\n            |        3--Search       |                 ";
     cout << "\n            |        4--Update       |                 ";
     cout << "\n            |        5--Delete       |                 ";
-    cout << "\n            |        6--Swap         |                 ";
-    cout << "\n            |        7--Exit         |                 ";
+    cout << "\n            |        6--Copy         |                 ";
+    cout << "\n            |        7--Swap         |                 ";
+    cout << "\n            |        8--Exit         |                 ";
     cout << "\n|=====================================================|\n\n\n\n";
     cout<<"\tOption : ";
 }
@@ -30,6 +32,20 @@ void number(){
     system("cls");
     cout << "|=====================================================|";
     cout << "\n                !! Enter Number !!                   ";
+    cout << "\n|=====================================================|\n\n\n\n";
+    cout<<"\tNumber : ";
+}
+void copyto(){
+    system("cls");
+    cout << "|=====================================================|";
+    cout << "\n                  !! Copy To !!                      ";
+    cout << "\n|=====================================================|\n\n\n\n";
+    cout<<"\tNumber : ";
+}
+void swapto(){
+    system("cls");
+    cout << "|=====================================================|";
+    cout << "\n                  !! Swap To !!                      ";
     cout << "\n|=====================================================|\n\n\n\n";
     cout<<"\tNumber : ";
 }
