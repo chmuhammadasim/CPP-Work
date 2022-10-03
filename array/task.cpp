@@ -7,7 +7,7 @@ void zero(int arr[]){
 }
 main()
 {
-	int arr[10],n,loc,z=0,u=0,s;
+	int arr[10],n,loc,z=0,u=0,s,a,b,temp;
 	char choice,choice2;
 	zero(arr);
     dbmsintro();
@@ -163,7 +163,7 @@ main()
 						goto mainmenu;
 						break;
 					default:
-						goto up2;
+							goto up2;
 						break;
 				}
 				break;
@@ -199,17 +199,97 @@ main()
 					case '3':
 						break;
 					default:
-						goto up3;
+							goto up3;
 						break;
 				}
 				break;
 			case '6':
-				
+				up4:
+				case6();
+				cin>>choice2;
+				switch(choice2)
+				{
+					case '1':
+						number();
+						cin>>a;
+						copyto();
+						cin>>b;
+						for(int i=0;i<=9;i++)
+						{
+							if(arr[i]==a)
+							{
+								z=i;
+								break;
+							}
+						}
+						for(int i=0;i<=9;i++)
+						{
+							if(arr[i]==b)
+							{
+								arr[i]=arr[z];
+							}
+						}
+						break;
+					case '2':
+						loca();
+						cin>>a;
+						copyto();
+						cin>>b;
+						arr[b]=arr[b];
+						break;
+					case '3':
+							goto mainmenu;
+						break;
+					default:
+						goto up4;					
+				}
 				break;
 			case '7':
+				up5:
+				case5();
+				cin>>choice2;
+				switch(choice2)
+				{
+					case '1': 
+						number();
+						cin>>n;
+						swapto();
+						cin>>s;
+						for(int i=0;i<=9;i++)
+						{
+							if(n==arr[i])
+							{
+								a=i;
+							}
+							if(s==arr[i])
+							{
+								b=i;
+							}
+						}
+						temp=arr[a];
+						arr[a]=arr[b];
+						arr[b]=temp;
+						break;
+					case '2':
+						loca();
+						cin>>n;
+						swapto();
+						cin>>s;
+						temp=arr[n];
+						arr[n]=arr[s];
+						arr[s]=temp;
+						break;
+					case '3':
+							goto mainmenu;
+						break;
+					default:
+						goto up5;
+				}
+				break;
+			case '8':
 				break;
 			default:
 				break;
 		}	
-	}while(choice!='7');
+	}while(choice!='8');
 }
